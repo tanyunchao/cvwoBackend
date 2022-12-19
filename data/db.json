@@ -1,0 +1,25 @@
+{
+    "posts": [
+        {
+            "id": 1,
+            "date": "11/11/11",
+            "tags": "cs1010, cs1111, cs2222",
+            "title": "Post 1",
+            "body": "hello bla bla bla bla"
+        },
+        {
+            "id": 2,
+            "date": "11/11/11",
+            "tags": "cs1010",
+            "title": "Post 2",
+            "body": "hello bla bla bla bla"
+        },
+        {
+            "id": 3,
+            "date": "11/11/11",
+            "tags": "cs1010,  cs2222",
+            "title": "Post 3",
+            "body": "hello bla bla bla bla"
+        }
+    ]
+}
