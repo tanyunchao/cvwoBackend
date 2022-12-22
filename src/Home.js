@@ -29,11 +29,11 @@ const Home = () => {
     
     return ( 
         <div>
+            <h1>Top posts of the week:</h1>
             { error && <div>{error}</div> }
             { loading && <div>Page loading hol up...</div> }
-            <h1>Top posts of the week:</h1>
             {/* {console.log(typeof data)}; */}
-            <TopThree posts={data}/>
+            {data && <TopThree posts={data} />}
 
         </div>
      );

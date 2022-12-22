@@ -17,3 +17,13 @@ code {
   font-size: larger;
   text-align: center;
 }
+
+.topThreePosts{
+  align-items: center;
+  justify-content: center;
+
+}
+
+.topThreePost{
+  max-width: 75%;
+}
