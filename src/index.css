@@ -48,3 +48,10 @@ code {
   flex-direction: column;
   align-items: center;
 }
+
+/* css for threadCards */
+.threadCard{
+  color: royalblue;
+  margin-left: auto;
+  margin-right: auto;
+}

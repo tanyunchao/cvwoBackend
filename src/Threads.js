@@ -1,5 +1,8 @@
 import { useEffect, useState } from "react";
+import { Card } from "react-bootstrap";
 import Accordion from 'react-bootstrap/Accordion';
+import { json } from "react-router";
+import Thread from "./Thread";
 //main threads page
 //need to get data from json server to dynamically generate threads
 
@@ -29,7 +32,6 @@ const Threads = () => {
             //add .catch for err here 
 
     }, []); // add vars inside that if changed, would rerun use effect
-
     
     return ( 
         <div>
@@ -38,10 +40,10 @@ const Threads = () => {
             <Accordion defaultActiveKey={activeKeys} alwaysOpen>
                 
                 {data && data.map(headers => (
-                    <Accordion.Item className="threadHeaders" eventKey={headers.threadGroupId.toString()} key={headers.threadGroupId}>
+                    <Accordion.Item className="threadHeaders" style={{marginBottom: "50px"}} eventKey={headers.threadGroupId.toString()} key={headers.threadGroupId}>
                         <Accordion.Header>{headers.threadGroupTitle}</Accordion.Header>
                         <Accordion.Body>
-                            <h3>Individual threads would go here</h3>
+                            {data && <Thread threads={headers.threadsId} />}
                         </Accordion.Body>
                     </Accordion.Item>
                 ))}

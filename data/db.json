@@ -76,36 +76,37 @@
         {
             "threadGroupId": 1,
             "threadGroupTitle": "SOC Academic",
-            "threadsId": [{
-                "threadId": 1,
-                "title": "CS1000"
-            },
-            {
-                "threadId": 2,
-                "title": "CS1234"
-            },
-            {
-                "threadId": 3,
-                "title": "CS1115C"
-            },
-            {
-                "threadId": 1,
-                "title": "CS1524L"
-            }
+            "threadsId": [
+                {
+                    "threadId": 1,
+                    "title": "CS1000"
+                },
+                {
+                    "threadId": 2,
+                    "title": "CS1234"
+                },
+                {
+                    "threadId": 3,
+                    "title": "CS1115C"
+                },
+                {
+                    "threadId": 1,
+                    "title": "CS1524L"
+                }
             ]
         },
         {
             "threadGroupId": 2,
             "threadGroupTitle": "Town Square",
-            "threadsId": [{
-                "threadId": 5,
-                "title": "General discussion"
-            },
-            {
-                "threadId": 6,
-                "title": "Gaming"
-            }
-        
+            "threadsId": [
+                {
+                    "threadId": 5,
+                    "title": "General discussion"
+                },
+                {
+                    "threadId": 6,
+                    "title": "Gaming"
+                }        
             ]
         }
     ]
