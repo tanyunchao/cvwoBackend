@@ -38,7 +38,7 @@ const Threads = () => {
             <Accordion defaultActiveKey={activeKeys} alwaysOpen>
                 
                 {data && data.map(headers => (
-                    <Accordion.Item eventKey={headers.threadGroupId.toString()} key={headers.threadGroupId}>
+                    <Accordion.Item className="threadHeaders" eventKey={headers.threadGroupId.toString()} key={headers.threadGroupId}>
                         <Accordion.Header>{headers.threadGroupTitle}</Accordion.Header>
                         <Accordion.Body>
                             <h3>Individual threads would go here</h3>

@@ -37,3 +37,14 @@ code {
   flex-direction: column;
   margin-left: 15px;
 }
+
+/* css for threadHeaders */
+.threadHeaders{
+  width: 75%;
+}
+
+.accordion{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
