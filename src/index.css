@@ -55,3 +55,10 @@ code {
   margin-left: auto;
   margin-right: auto;
 }
+
+/* For welcome page */
+.welcomeDiv{
+  color: #0b193e;
+  background-color: #8ec3eb;
+  margin: 200px 500px 30px 500px;
+}

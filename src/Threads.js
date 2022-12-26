@@ -35,7 +35,7 @@ const Threads = () => {
     
     return ( 
         <div>
-            <h1>Thread page in the works</h1>
+            <h1>Main threads: </h1>
             {error && <h2>{error}</h2> }
             <Accordion defaultActiveKey={activeKeys} alwaysOpen>
                 
