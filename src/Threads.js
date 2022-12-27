@@ -1,7 +1,5 @@
 import { useEffect, useState } from "react";
-import { Card } from "react-bootstrap";
 import Accordion from 'react-bootstrap/Accordion';
-import { json } from "react-router";
 import Thread from "./Thread";
 //main threads page
 //need to get data from json server to dynamically generate threads
@@ -11,7 +9,7 @@ const Threads = () => {
     const [data, setData] = useState(null);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
-    const [activeKeys, setActiveKeys] = useState(['1', '2'])
+    const [activeKeys] = useState(['1', '2'])
 
     useEffect( () => {
         fetch(`http://localhost:8000/threadGroups`)
@@ -37,6 +35,7 @@ const Threads = () => {
         <div>
             <h1>Main threads: </h1>
             {error && <h2>{error}</h2> }
+            {loading &&  <h2>Page is loading...</h2> }
             <Accordion defaultActiveKey={activeKeys} alwaysOpen>
                 
                 {data && data.map(headers => (
