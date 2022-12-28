@@ -63,3 +63,38 @@ code {
   margin: 200px 500px 30px 500px;
   border-radius: 15px;
 }
+
+/* For Post.js */
+.postContainer{
+  margin-top: 20px;;
+}
+
+.postTitleDiv{
+  text-align:left;
+  text-indent: 2em;
+  border-style: solid;
+  border-radius: 5px;
+  border-color: #4781EB;
+  border-width: 2px;
+}
+
+.postUser{
+  font-size: 20px;
+}
+
+.lineBreak{
+  width: 80%;
+  text-align: center;
+  margin-left: 10%;
+}
+
+.postContent{
+  margin: 0 10px 15px 10px;
+}
+
+.commentHeader{
+  text-align: left;
+}
+
+
+
