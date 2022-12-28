@@ -20,7 +20,7 @@ const TopThree = ({posts}) => {
     return (  
         <div className="topThreePosts list-group" >
             {filtered.map(post => (
-                <a key={post.id} href="/pages:id" className="list-group-item list-group-item-action topThreePost" aria-current="true">
+                <a key={post.id} href={"/posts/" + post.id} className="list-group-item list-group-item-action topThreePost" aria-current="true">
                     <div className="d-flex w-100 justify-content-between ">
                         <h5 className="mb-1">Title: {post.title}</h5>
                         <small>Submitted by {post.authorId} on {post.date}</small>
