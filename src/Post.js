@@ -1,6 +1,7 @@
 import { useParams } from "react-router";
 import { useEffect, useState } from "react";
 import { Container, Row, Col,Stack } from "react-bootstrap";
+import profilePic from "./assets/images/profilePic.jpg"
 
 const Post = () => {
 
@@ -49,8 +50,17 @@ const Post = () => {
                         </div>
                         <div className="postContentDiv">
                         </div>
-                        <div className="commentDiv">
+                        <div className="commentSection">
                             <h3 className="commentHeader">Comments:</h3>
+                            <div className="individualCommentDiv">
+                                <div className="commentUser">
+                                    <img src={profilePic} className="profilePic" />
+                                    <p>forum_user</p>
+                                </div>
+                                <div className="commentBody">
+                                    <p style={{borderStyle: "solid"}}>This is genuinely unexpected. How could this have happened?!</p>
+                                </div>
+                            </div>
                         </div>
                     </Stack>
                 </Col>
