@@ -16,6 +16,14 @@ code {
   color: black;
   font-size: larger;
   text-align: center;
+  background-color: #DAE0E6;
+  height: auto;
+}
+
+
+/* css for homepage */
+.homeDiv{
+  padding-bottom: 20px;
 }
 
 .topThreePosts{
@@ -66,7 +74,11 @@ code {
 
 /* For Post.js */
 .postContainer{
-  margin-top: 20px;;
+  margin-top: 20px;
+}
+
+.postRow{
+  border-radius: 5px;
 }
 
 .postTitleDiv{
@@ -90,10 +102,32 @@ code {
 
 .postContent{
   margin: 0 10px 15px 10px;
+  font-size: 18px;
 }
 
 .commentHeader{
   text-align: left;
+  font-size: 25px;
+  
+}
+
+.postSideBar{
+  background-color: #ffffff;
+  border-radius: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  padding-top: 10px;
+}
+
+.postMiddleBar{
+  background-color: #ffffff;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  padding-top: 10px;
+
 }
 
 

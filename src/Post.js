@@ -36,10 +36,10 @@ const Post = () => {
         {loading && <div>Page is still loading hol up....</div> }
         {/* possible add in breadcrumbs on top of the page */}
         {data && 
-        <Container className="postContainer">
-            <Row className="flex-nowrap">
-                <Col>left placeholder</Col>
-                <Col xs={10}>
+        <Container fluid className="postContainer">
+            <Row className="flex-nowrap postRow">
+                <Col className="postSideBar">left placeholder</Col>
+                <Col className="postMiddleBar" xs={8}>
                     <Stack gap={2}>
                         <div className="postTitleDiv">
                             <h1 className="postTitle">{data.title}</h1>
@@ -54,7 +54,7 @@ const Post = () => {
                         </div>
                     </Stack>
                 </Col>
-                <Col>right placeholder</Col>
+                <Col className="postSideBar">right placeholder</Col>
             </Row>
         </Container>
         }

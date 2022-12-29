@@ -28,7 +28,7 @@ const Home = () => {
     }, []); // add vars inside that if changed, would rerun use effect
     
     return ( 
-        <div>
+        <div className="homeDiv">
             <h1>Top posts of the week:</h1>
             { error && <div>{error}</div> }
             { loading && <div>Page loading hol up...</div> }
