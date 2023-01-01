@@ -176,4 +176,12 @@ code {
   margin: 0 0 0 0;
 }
 
+.textboxDiv{
+  border: 1px solid black;
+  min-height: 200px;
+  max-width: 90%;
+  margin-left: 5%;
+
+}
+
 

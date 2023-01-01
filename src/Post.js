@@ -2,6 +2,7 @@ import { useParams } from "react-router";
 import { useEffect, useState } from "react";
 import { Container, Row, Col,Stack } from "react-bootstrap";
 import profilePic from "./assets/images/profilePic.jpg"
+import RichtextEditor from "./RichtextEditor";
 
 const Post = () => {
 
@@ -48,13 +49,16 @@ const Post = () => {
                             <hr className="lineBreak"/>
                             <p className="postContent">{data.body}</p>
                         </div>
-                        <div className="postContentDiv">
+                        <br></br>
+                        <div>
+                            <p style={{textAlign: "left", textIndent: "1em"}}>Any thoughts?</p>
+                            <RichtextEditor />
                         </div>
                         <div className="commentSection">
                             <h3 className="commentHeader">Comments:</h3>
                             <div className="individualCommentDiv">
                                 <div className="commentUser">
-                                    <img src={profilePic} className="profilePic" />
+                                    <img src={profilePic} alt="user profile" className="profilePic" />
                                     <p>forum_user</p>
                                 </div>
                                 <div className="commentBody">
