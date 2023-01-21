@@ -7,6 +7,7 @@
 #   Character.create(name: "Luke", movie: movies.first)
 
 User.destroy_all
+IndivThread.destroy_all
 Post.destroy_all
 Comment.destroy_all
 
@@ -14,12 +15,16 @@ user1 = User.create(username: "bobby")
 user2 = User.create(username: "charlie")
 user3 = User.create(username: "declan")
 
-post1 = Post.create(title: "post1", body: "this is the content of the post 1", user: user1)
-post2 = Post.create(title: "post2", body: "this is the content of the post 2", user: user1)
-post3 = Post.create(title: "post3", body: "this is the content of the post 3", user: user1)
-post4 = Post.create(title: "post4", body: "this is the content of the post 4", user: user2)
-post5 = Post.create(title: "post5", body: "this is the content of the post 5", user: user2)
-post6 = Post.create(title: "post6", body: "this is the content of the post 6", user: user3)
+thread1 = IndivThread.create(name: "CS1010J")
+thread2 = IndivThread.create(name: "CS1000")
+thread3 = IndivThread.create(name: "CS1234")
+
+post1 = Post.create(title: "post1", body: "this is the content of the post 1", user: user1, indiv_thread: thread1)
+post2 = Post.create(title: "post2", body: "this is the content of the post 2", user: user1, indiv_thread: thread3)
+post3 = Post.create(title: "post3", body: "this is the content of the post 3", user: user1, indiv_thread: thread1)
+post4 = Post.create(title: "post4", body: "this is the content of the post 4", user: user2, indiv_thread: thread2)
+post5 = Post.create(title: "post5", body: "this is the content of the post 5", user: user2, indiv_thread: thread3)
+post6 = Post.create(title: "post6", body: "this is the content of the post 6", user: user3, indiv_thread: thread2)
 
 comment1 = Comment.create(body: "this is the comment for comment 1 by user 1 on post 1", user: user1, post: post1)
 comment2 = Comment.create(body: "this is the comment for comment 2 by user 1 on post 1", user: user1, post: post1)

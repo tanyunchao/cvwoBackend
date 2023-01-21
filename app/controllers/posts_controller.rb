@@ -12,11 +12,11 @@ class PostsController < ApplicationController
     end
 
     def create
-        @current_user = User.find_by(username: params[:username].downcase!)
+        @current_user = User.find_by(username: params[:username].downcase)
+        @current_thread = IndivThread.find_by(id: params[:threadID])
         @newpost = Post.new(
             :title => params[:title],
             :body => params[:body],
-            :date => params[:date],
             :user => @current_user
         )
         if @newpost.save!

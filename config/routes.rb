@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :indiv_threads
   resources :comments
   resources :users 
   resources :posts 
@@ -24,7 +25,23 @@ Rails.application.routes.draw do
   end
 
   scope '/comments' do
+    scope '/create' do
+      post '/' => 'comments#create'
+    end
 
+    scope '/delete' do 
+      post '/' => 'comments#delete'
+    end    
+  end
+
+  scope '/threads' do
+    scope '/' do
+      get '/' => 'indiv_threads#index'
+    end
+
+    scope '/:id' do 
+      post '/' => 'indiv_threads#show'
+    end    
   end
   # post 'users/create', to: 'users#create'
     
