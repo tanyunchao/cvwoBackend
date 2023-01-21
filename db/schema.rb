@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_01_21_172522) do
+ActiveRecord::Schema[7.0].define(version: 2023_01_21_175648) do
   create_table "comments", force: :cascade do |t|
     t.string "body"
     t.integer "user_id", null: false
@@ -21,10 +21,18 @@ ActiveRecord::Schema[7.0].define(version: 2023_01_21_172522) do
     t.index ["user_id"], name: "index_comments_on_user_id"
   end
 
-  create_table "indiv_threads", force: :cascade do |t|
+  create_table "group_threads", force: :cascade do |t|
     t.string "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "indiv_threads", force: :cascade do |t|
+    t.string "name"
+    t.integer "group_thread_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["group_thread_id"], name: "index_indiv_threads_on_group_thread_id"
   end
 
   create_table "posts", force: :cascade do |t|
@@ -46,6 +54,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_01_21_172522) do
 
   add_foreign_key "comments", "posts"
   add_foreign_key "comments", "users"
+  add_foreign_key "indiv_threads", "group_threads"
   add_foreign_key "posts", "indiv_threads"
   add_foreign_key "posts", "users"
 end

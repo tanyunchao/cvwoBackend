@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :group_threads
   resources :indiv_threads
   resources :comments
   resources :users 

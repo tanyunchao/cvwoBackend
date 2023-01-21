@@ -15,9 +15,15 @@ user1 = User.create(username: "bobby")
 user2 = User.create(username: "charlie")
 user3 = User.create(username: "declan")
 
-thread1 = IndivThread.create(name: "CS1010J")
-thread2 = IndivThread.create(name: "CS1000")
-thread3 = IndivThread.create(name: "CS1234")
+group_threads1 = GroupThread.create(name: "Soc academia")
+group_threads2 = GroupThread.create(name: "Town Hall")
+
+thread1 = IndivThread.create(name: "CS1010J", group_thread: group_threads1)
+thread2 = IndivThread.create(name: "CS1000", group_thread: group_threads1)
+thread3 = IndivThread.create(name: "CS1234", group_thread: group_threads1)
+thread4 = IndivThread.create(name: "General", group_thread: group_threads2)
+thread5 = IndivThread.create(name: "Gaming", group_thread: group_threads2)
+
 
 post1 = Post.create(title: "post1", body: "this is the content of the post 1", user: user1, indiv_thread: thread1)
 post2 = Post.create(title: "post2", body: "this is the content of the post 2", user: user1, indiv_thread: thread3)
