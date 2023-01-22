@@ -18,10 +18,10 @@ const Threads = () => {
             <Accordion defaultActiveKey={activeKeys} alwaysOpen>
                 
                 {data && data.map(headers => (
-                    <Accordion.Item className="threadHeaders" style={{marginBottom: "50px"}} eventKey={headers.threadGroupId.toString()} key={headers.threadGroupId}>
-                        <Accordion.Header>{headers.threadGroupTitle}</Accordion.Header>
+                    <Accordion.Item className="threadHeaders" style={{marginBottom: "50px"}} eventKey={headers.id.toString()} key={headers.id}>
+                        <Accordion.Header>{headers.name}</Accordion.Header>
                         <Accordion.Body>
-                            {data && <Thread threads={headers.threadsId} />}
+                            {data && <Thread groupId={headers.id} />}
                         </Accordion.Body>
                     </Accordion.Item>
                 ))}
