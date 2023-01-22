@@ -1,32 +1,11 @@
 import { useEffect, useState } from "react";
 import TopThree from "./TopThree";
+import useFetch from "./useFetch";
 
 const Home = () => {
     
-    const [data, setData] = useState(null);
-    const [loading, setLoading] = useState(true);
-    const [error, setError] = useState(null);
+    const { data, loading, error } = useFetch('http://localhost:8000/posts')
 
-    useEffect( () => {
-        fetch(`http://localhost:8000/posts`)
-            .then((response) => {
-                return response.json();
-            })
-            .then(data => {
-                setLoading(false);
-                setData(data);
-                setError(null);
-            })
-            .catch(err => {
-                // setError(err);
-                setLoading(false);
-                setError("error in fetching data");
-                console.log("error in fetching data");
-            })
-            //add .catch for err here 
-
-    }, []); // add vars inside that if changed, would rerun use effect
-    
     return ( 
         <div className="homeDiv">
             <h1>Top posts of the week:</h1>

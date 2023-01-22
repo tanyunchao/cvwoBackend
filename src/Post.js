@@ -1,35 +1,15 @@
 import { useParams } from "react-router";
-import { useEffect, useState } from "react";
 import { Container, Row, Col,Stack } from "react-bootstrap";
 import profilePic from "./assets/images/profilePic.jpg"
 import RichtextEditor from "./RichtextEditor";
+import useFetch from "./useFetch";
 
 const Post = () => {
-
-    const [data, setData] = useState(null);
-    const [loading, setLoading] = useState(true);
-    const [error, setError] = useState(null);
     
     const {postId} = useParams();
-    useEffect( () => {
-        fetch(`http://localhost:8000/posts/` + postId)
-            .then((response) => {
-                return response.json();
-            })
-            .then(data => {
-                setLoading(false);
-                setData(data);
-                setError(null);
-            })
-            .catch(err => {
-                // setError(err);
-                setLoading(false);
-                setError("error in fetching post data");
-                console.log("error in fetching post data");
-            })
-            //add .catch for err here 
 
-    }, []);
+    const { data, loading, error } = useFetch(`http://localhost:8000/posts/` + postId);
+
 
     return ( 
     <div>

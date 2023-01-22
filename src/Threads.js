@@ -1,35 +1,14 @@
 import { useEffect, useState } from "react";
 import Accordion from 'react-bootstrap/Accordion';
 import Thread from "./Thread";
+import useFetch from "./useFetch";
 //main threads page
 //need to get data from json server to dynamically generate threads
 
 const Threads = () => {
 
-    const [data, setData] = useState(null);
-    const [loading, setLoading] = useState(true);
-    const [error, setError] = useState(null);
     const [activeKeys] = useState(['1', '2'])
-
-    useEffect( () => {
-        fetch(`http://localhost:8000/threadGroups`)
-            .then((response) => {
-                return response.json();
-            })
-            .then(data => {
-                setLoading(false);
-                setData(data);
-                setError(null);
-            })
-            .catch(err => {
-                // setError(err);
-                setLoading(false);
-                setError("error in fetching thread data");
-                console.log("error in fetching thread data");
-            })
-            //add .catch for err here 
-
-    }, []); // add vars inside that if changed, would rerun use effect
+    const { data, loading, error } = useFetch('http://localhost:8000/group_threads')
     
     return ( 
         <div>
