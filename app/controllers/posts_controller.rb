@@ -30,4 +30,11 @@ class PostsController < ApplicationController
         Post.find(params[:id]).destroy
         redirect_to :action => 'index'
     end
+
+    def getComments 
+        @comments = Comment.joins(:user).where("post_id = ?", params[:id]).select('comments.body, comments.created_at, users.username')
+        
+        render json: @comments
+    end
+
 end

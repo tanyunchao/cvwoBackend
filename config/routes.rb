@@ -23,6 +23,10 @@ Rails.application.routes.draw do
     scope '/delete' do 
       post '/' => 'posts#delete'
     end
+
+    scope '/comments' do
+      get '/:id' => 'posts#getComments'
+    end
   end
 
   scope '/comments' do
@@ -35,7 +39,7 @@ Rails.application.routes.draw do
     end    
   end
 
-  scope '/threads' do
+  scope '/thread' do
     scope '/' do
       get '/' => 'indiv_threads#index'
     end
@@ -44,6 +48,11 @@ Rails.application.routes.draw do
       post '/' => 'indiv_threads#show'
     end    
   end
+
+  get 'thread_group/children/:id', to: 'group_threads#getChildren'
+  get 'thread_group/comment_count/:id', to: 'group_threads#commentCount'
+  
+
   # post 'users/create', to: 'users#create'
     
 

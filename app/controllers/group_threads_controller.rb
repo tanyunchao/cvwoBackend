@@ -11,4 +11,15 @@ class GroupThreadsController < ApplicationController
         render json: @threads
     end
 
+    def getChildren
+        @children = IndivThread.where("group_thread_id = ?", params[:id])
+
+        render json: @children
+    end
+
+    def commentCount
+        @count = IndivThread.where("group_thread_id = ?", params[:id]).count
+
+        render json: @count
+    end
 end
