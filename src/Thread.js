@@ -5,7 +5,6 @@ import useFetch from "./useFetch";
 
 const Thread = ({groupId}) => {
 
-    console.log(`http://localhost:8000/thread_group/children/` + groupId);
     const { data, loading, error } = useFetch(`http://localhost:8000/thread_group/children/` + groupId);
 
     const { data: commentCounter, loading: load2, error: error2 } = useFetch(`http://localhost:8000/thread_group/comment_count/` + groupId);
@@ -16,7 +15,6 @@ const Thread = ({groupId}) => {
             { error && <p>{error.message}</p> }
             {data && data.map(thread => (
                 <Card style={{width: "70%"}} className="threadCard" key={thread.id}>
-                    {console.log("hello")}
                     <Card.Title>                    
                         {thread.name + ' '} 
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-chat-left-text-fill" viewBox="0 0 16 16">

@@ -13,8 +13,6 @@ const Post = () => {
     // fetch comments
     const { data: comments, loading: loading2, error: error2 } = useFetch(`http://localhost:8000/posts/comments/` + postId);    
 
-    console.log(comments);
-
     return ( 
     <div>
         {error && <div>{error}</div> }
