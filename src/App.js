@@ -15,7 +15,7 @@ function App() {
             <Routes>
                 <Route path='/' element={<Welcome />} />
                 <Route path='/threads'>
-                  <Route path=':threadId' element={<ThreadPage />} />
+                  <Route path=":threadId" element={<ThreadPage />} />
                   <Route path='' element={<Threads />} />
                 </Route>
                 <Route path="/home" element={<Home />} />
