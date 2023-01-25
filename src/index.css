@@ -1,0 +1,187 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.App{
+  color: black;
+  font-size: larger;
+  text-align: center;
+  background-color: #DAE0E6;
+  height: auto;
+}
+
+
+/* css for homepage */
+.homeDiv{
+  padding-bottom: 20px;
+}
+
+.topThreePosts{
+  align-items: center;
+  justify-content: center;
+
+}
+
+.topThreePost{
+  max-width: 75%;
+}
+
+.topThreePost:hover{
+  box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
+}
+
+.votingButtons{
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+}
+
+/* css for threadHeaders */
+.threadHeaders{
+  width: 70%;
+}
+
+.accordion{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* css for threadCards */
+.threadCard{
+  color: royalblue;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* For welcome page */
+.welcomeDiv{
+  color: #0b193e;
+  background-color: #8ec3eb;
+  margin: 200px 500px 30px 500px;
+  border-radius: 15px;
+}
+
+/* For Post.js */
+.postContainer{
+  margin-top: 20px;
+}
+
+.postRow{
+  border-radius: 5px;
+}
+
+.postTitleDiv{
+  text-align:left;
+  text-indent: 2em;
+  border-style: solid;
+  border-radius: 5px;
+  border-color: #4781EB;
+  border-width: 2px;
+}
+
+.postUser{
+  font-size: 20px;
+}
+
+.lineBreak{
+  width: 80%;
+  text-align: center;
+  margin-left: 10%;
+}
+
+.postContent{
+  margin: 0 10px 15px 10px;
+  font-size: 18px;
+}
+
+.commentHeader{
+  text-align: left;
+  font-size: 25px;
+  
+}
+
+.postSideBar{
+  background-color: #ffffff;
+  border-radius: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  padding-top: 10px;
+}
+
+.postMiddleBar{
+  background-color: #ffffff;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  padding-top: 10px;
+
+}
+
+.individualCommentDiv{
+  display: flex;
+  text-align: left;
+  margin-left: 35px;
+  margin-bottom: 10px;
+  padding: 10px 10px 10px 10px;
+  border-radius: 5px;
+  border-style: solid;
+}
+
+.commentUser{
+  font-size: 15px;
+  border-style: double;
+  border-color: #6b5b95;
+  padding: 5px 5px 5px 5px;
+  border-radius: 10px;
+  margin-right: 5px ;
+  display: flex;
+  flex-direction: column;
+  max-height: 100px;
+  justify-content: center;
+}
+
+
+.profilePic{
+  object-fit: contain;
+  border-radius: 4px;
+  padding: 5px;
+  width: 55px;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+
+.commentBody{
+  text-indent: 1em; /* might remove ltr*/
+  flex-grow: 1;
+  min-height: 100px;
+  margin-left: 15px;
+}
+
+.timestamp{
+  font-size: 15px;
+  color: rgba(0,0,0,0.5);
+  margin: 0 0 0 0;
+}
+
+.textboxDiv{
+  border: 1px solid black;
+  min-height: 200px;
+  max-width: 90%;
+  margin-left: 5%;
+
+}
+
+

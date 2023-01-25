@@ -1,0 +1,113 @@
+{
+    "posts": [
+        {
+            "id": 1,
+            "authorId": 1,
+            "date": "11/11/11",
+            "tags": "cs1010, cs1111, cs2222",
+            "title": "Post 1",
+            "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi lectus dui, consectetur in maximus vel, eleifend vel ipsum. Praesent gravida bibendum facilisis. Suspendisse facilisis quis est vitae dignissim. Integer eleifend enim vel est porttitor dignissim. In vitae est maximus, pellentesque magna cursus, laoreet dui. Mauris sem odio, interdum ac iaculis a, dignissim eget lorem. Ut malesuada mi suscipit dui ornare, id volutpat mauris sodales. Aliquam eros urna, suscipit eu nibh eu, porta pharetra augue.",
+            "votes": 0 
+        },
+        {
+            "id": 2,
+            "authorId": 2,
+            "date": "11/11/11",
+            "tags": "cs1010",
+            "title": "Post 2",
+            "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lobortis pulvinar neque, sit amet faucibus risus tristique id. Duis non ante id eros porttitor egestas et vitae purus. Donec bibendum lacus non diam vestibulum, ut dapibus leo euismod. Fusce tincidunt quis nunc ac lacinia. Nullam orci tortor, convallis at tempor vitae, tincidunt sit amet elit. Curabitur nunc augue, sodales id sapien vitae, aliquet fermentum magna. Maecenas neque enim, porttitor interdum nisi ac, accumsan egestas massa. Donec blandit sapien sit amet sem placerat lobortis. Ut bibendum tellus ac odio suscipit vulputate. Curabitur congue erat a libero vehicula pulvinar. Mauris commodo ipsum pretium cursus sollicitudin. Donec vel lorem ipsum.",
+            "votes": 15
+        },
+        {
+            "id": 3,
+            "authorId": 3,
+            "date": "11/11/11",
+            "tags": "cs1010,  cs2222",
+            "title": "Post 3",
+            "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum erat ac justo dapibus maximus. Maecenas vitae gravida velit, quis facilisis magna. Curabitur imperdiet lacus non blandit viverra. Morbi molestie placerat leo, vel vestibulum felis varius sed. Nunc pulvinar facilisis sem in finibus. Donec interdum ut elit ullamcorper egestas. Curabitur nec sem arcu.",
+            "votes": 12
+        },
+        {
+            "id": 4,
+            "authorId": 4,
+            "date": "11/12/13",
+            "tags": "cs1010",
+            "title": "Post 4",
+            "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lobortis pulvinar neque, sit amet faucibus risus tristique id. Duis non ante id eros porttitor egestas et vitae purus. Donec bibendum lacus non diam vestibulum, ut dapibus leo euismod. Fusce tincidunt quis nunc ac lacinia. Nullam orci tortor, convallis at tempor vitae, tincidunt sit amet elit. Curabitur nunc augue, sodales id sapien vitae, aliquet fermentum magna. Maecenas neque enim, porttitor interdum nisi ac, accumsan egestas massa. Donec blandit sapien sit amet sem placerat lobortis. Ut bibendum tellus ac odio suscipit vulputate. Curabitur congue erat a libero vehicula pulvinar. Mauris commodo ipsum pretium cursus sollicitudin. Donec vel lorem ipsum.",
+            "votes": -3
+        },
+        {
+            "id": 5,
+            "authorId": 5,
+            "date": "1/2/22",
+            "tags": "cs1010",
+            "title": "Post 5",
+            "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lobortis pulvinar neque, sit amet faucibus risus tristique id. Duis non ante id eros porttitor egestas et vitae purus. Donec bibendum lacus non diam vestibulum, ut dapibus leo euismod. Fusce tincidunt quis nunc ac lacinia. Nullam orci tortor, convallis at tempor vitae, tincidunt sit amet elit. Curabitur nunc augue, sodales id sapien vitae, aliquet fermentum magna. Maecenas neque enim, porttitor interdum nisi ac, accumsan egestas massa. Donec blandit sapien sit amet sem placerat lobortis. Ut bibendum tellus ac odio suscipit vulputate. Curabitur congue erat a libero vehicula pulvinar. Mauris commodo ipsum pretium cursus sollicitudin. Donec vel lorem ipsum.",
+            "votes": 5
+        }
+
+    ],
+
+    "users": [
+        {
+            "userId": 1,
+            "username": "john"
+        },
+        {
+            "userId": 2,
+            "username": "gary"
+        },
+        {
+            "userId": 3,
+            "username": "brian"
+        },
+        {
+            "userId": 4,
+            "username": "victor"
+        },
+        {
+            "userId": 5,
+            "username": "jayce"
+        }
+        
+    ],
+    
+    "threadGroups": [
+        {
+            "threadGroupId": 1,
+            "threadGroupTitle": "SOC Academic",
+            "threadsId": [
+                {
+                    "threadId": 1,
+                    "title": "CS1000"
+                },
+                {
+                    "threadId": 2,
+                    "title": "CS1234"
+                },
+                {
+                    "threadId": 3,
+                    "title": "CS1115C"
+                },
+                {
+                    "threadId": 4,
+                    "title": "CS1524L"
+                }
+            ]
+        },
+        {
+            "threadGroupId": 2,
+            "threadGroupTitle": "Town Square",
+            "threadsId": [
+                {
+                    "threadId": 5,
+                    "title": "General discussion"
+                },
+                {
+                    "threadId": 6,
+                    "title": "Gaming"
+                }        
+            ]
+        }
+    ]
+}
