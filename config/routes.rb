@@ -51,7 +51,7 @@ Rails.application.routes.draw do
 
   get 'thread_group/children/:id', to: 'group_threads#getChildren'
   get 'thread_group/comment_count/:id', to: 'group_threads#commentCount'
-  
+  get 'indiv_threads/get/:threadname', to:'indiv_threads#view'  
 
   # post 'users/create', to: 'users#create'
     

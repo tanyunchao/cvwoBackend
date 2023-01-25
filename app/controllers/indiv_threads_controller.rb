@@ -11,5 +11,9 @@ class IndivThreadsController < ApplicationController
         render json: @threads
     end
 
+    def view
+        @threadview = Post.joins(:IndivThread).where("name = ?", params[:threadname])
 
+        render json: @threadview
+    end
 end
