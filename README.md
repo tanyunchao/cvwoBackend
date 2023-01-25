@@ -11,3 +11,6 @@ whereas the rails api can be started with: rails s -p 8000
 ## References
 The frontend for the project was heavily inspired by the tutorial that I learnt React from. The source code can be found from https://github.com/iamshaunjp/Complete-React-Tutorial.
 
+Done by:
+Tan Yun Chao
+A0258324A
